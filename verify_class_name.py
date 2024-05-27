@@ -11,7 +11,7 @@ def get_class_names(script_path):
     return class_names
 
 
-def is_camel_case(name):
+def is_pascal_case(name):
     return re.match(r"^[A-Z][a-zA-Z0-9]*$", name) is not None
 
 
