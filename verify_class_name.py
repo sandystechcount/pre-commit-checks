@@ -3,7 +3,7 @@ import re
 import sys
 
 
-def get_class_names(script_path):
+def getClassNames(script_path):
     with open(script_path, "r") as file:
         file_content = file.read()
     tree = ast.parse(file_content)
@@ -11,7 +11,7 @@ def get_class_names(script_path):
     return class_names
 
 
-def is_camel_case(name):
+def isCamelCase(name):
     return re.match(r"^[A-Z][a-zA-Z0-9]*$", name) is not None
 
 
